@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Police Force Engagement</title>
+    <link rel="icon" href="/static/img/logo/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Genos&family=Noto+Serif:wght@700&family=Philosopher&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* upload image property */
+
+        .image__div {
+            /* background-color: navy; */
+            height: 300px;
+            width: 300px;
+            position: relative;
+            border: 5px solid red;
+            border-radius: 50%;
+            background: url('../images/1705584627808.png');
+
+                {
+                    {
+                    !-- background-size: 100%, 100%;
+                    --
+                }
+            }
+
+                {
+                    {
+                    !-- margin: 100px auto;
+                    --
+                }
+            }
+
+            overflow: hidden;
+        }
+
+        .image__File {
+            position: absolute;
+            bottom: 0px;
+            outline: none;
+            color: transparent;
+            /* height: 100%; */
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px 150px;
+            cursor: pointer;
+            transition: 0.5s;
+            background-color: #e07878;
+        }
+
+            {
+                {
+                !-- .image__File::before {
+                    content: '\f030';
+                    color: #ffffff;
+                }
+
+                --
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    {{!-- {{>header}} --}}
+
+    <form action="/image" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" placeholder="submit">
+    </form>
+
+    {{!-- <form action="/image" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" placeholder="submit">
+        <img src="../images/1705584627808.png" class="rounded-circle" style="width: 150px; height: 150px;">
+    </form> --}}
+
+    {{!-- <div class="image__div">
+        <form action="/image" method="post" enctype="multipart/form-data">
+            <input type="file" class="image__File">
+        </form>
+    </div> --}}
+
+    {{!-- {{>rightcanvas}} --}}
+    {{!-- <div style="margin-top: 145px;  background-color: #f0f0f0; "> --}}
+
+        {{!-- <div class="image-div"> --}}
+            {{!-- <form action="/image" method="post" enctype="multipart/form-data">
+                <input type="file" name="image">
+                <input type="submit" placeholder="submit">
+                {{!-- <img src="../images/1705584663976.png" class="rounded-circle"
+                    style="width: 150px; height: 150px;"> --}}
+            </form> --}}
+            {{!--
+        </div> --}}
+
+        {{!-- </div> --}}
+
+    {{!-- <!-- our team member --> --}}
+    {{>team}}
+
+    {{!-- footer --}}
+    {{>footer}}
+
+    <!-- java script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -21,126 +21,9 @@
 
 <body>
     <!-- Navbar -->
-    <div class="fixed-top bg-new">
-        <!-- top bar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <img src="/static/img/top-img/bhopal-police.png" alt="" height="60px"">
-                <h1 class=" fs-1 g-font1" style="font-weight: bold; color: #efd1a7;">MP Police</h1>
-                <img src="/static/img/top-img/G-20.png" alt="" height="60px">
-            </div>
-        </nav>
 
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a href="#">
-                    <img src="/static/img/logo/logo.png" alt="pFe" width="50px" class="logo me-3">
-                </a>
-                <!-- <a class="navbar-brand" href="index">pFe</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/service" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/structure" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">Structure</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Info Zone
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item"
-                                        href="https://www.mppolice.gov.in/sites/default/files/Annual_Administrative_Report_2017-2018.pdf"
-                                        target="_blank" data-bs-toggle="modal" data-bs-target="#loginModal">Annual Admin
-                                        Report</a></li>
-                                <li><a class="dropdown-item" href="/views/who_is_who" target="_blank">Who is
-                                        Who</a></li>
-                                <li><a class="dropdown-item"
-                                        href="https://www.mppolice.gov.in/sites/default/files/documents/ig-sir-plan-detail.pdf"
-                                        target="_blank" data-bs-toggle="modal" data-bs-target="#loginModal">Plans of MP
-                                        Police</a></li>
-                                <li><a class="dropdown-item"
-                                        href="https://www.mppolice.gov.in/sites/default/files/stc2020/Statistical-Data-2021.pdf"
-                                        target="_blank" data-bs-toggle="modal" data-bs-target="#loginModal">Statistical
-                                        Data</a></li>
-                                <li><a class="dropdown-item" href="/views/history" target="_blank"
-                                        data-bs-toggle="modal" data-bs-target="#loginModal">History of MP
-                                        Police</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Police Stations
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/views/ab_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">Aishbag Police Station</a></li>
-                                <li><a class="dropdown-item" href="/views/ag_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">Ashoka Garden Police Station</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/views/bg_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">Bairagarh Police Station</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/views/gn_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">Ghandhi Nagar Police Station</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/views/gp_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">Govindpura Police Station</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/views/mpn_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">MP Nagar Police Station</a></li>
-                                <li><a class="dropdown-item" href="/views/rb_police_station" data-bs-toggle="modal"
-                                        data-bs-target="#loginModal">Ratibarh Police Station</a></li>
-                            </ul>
-                        </li>
-
-                        {{!-- <label for="policeStationSelect"></label> --}}
-                        {{!-- <select class="form-select" id="policeStationSelect" placeholder="Police Stations:">
-                            <option value="/views/ab_police_station">Aishbag Police Station</option>
-                            <option value="/views/ag_police_station">Ashoka Garden Police Station</option>
-                            <option value="/views/bg_police_station">Bairagarh Police Station</option>
-                            <option value="/views/gn_police_station">Ghandhi Nagar Police Station</option>
-                            <option value="/views/gp_police_station">Govindpura Police Station</option>
-                            <option value="/views/mpn_police_station">MP Nagar Police Station</option>
-                            <option value="/views/rb_police_station">Ratibarh Police Station</option>
-                        </select> --}}
-
-
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/about" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact us</a>
-                        </li>
-                    </ul>
-
-                    <div class="mx-2">
-                        <button class="btn btn-transparent text-light border-0" data-bs-toggle="modal"
-                            data-bs-target="#loginModal">Login</button>
-                        <button class="btn btn-transparent text-light border-0" data-bs-toggle="modal"
-                            data-bs-target="#signupModal">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </div>
+    {{>header}}
+   
 
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -151,7 +34,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="/userlogin" method="post">
+                    <form action="/officer" method="post">
                         <img class="mb-4" src="/static/img/logo/logo.png" alt="" width="72" height="57">
 
                         <div class="form-floating my-3">
@@ -185,45 +68,6 @@
     </div>
 
 
-    {{!-- <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <img class="mb-4" src="/static/img/logo/logo.png" alt="" width="72" height="57">
-
-                        <div class="form-floating my-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="form-floating my-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
-                        </div>
-
-                        <button class="w-10 btn btn-lg mb-3 forgot-pass" type="button">Forgot Password</button>
-                        <div class="checkbox mb-3">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                        <div style="display: flex; justify-content: space-between;">
-                            <p class="mt-4 mb-3 text-body-secondary">© pFe (Code Dreamers)</p>
-                            <button class="w-10 btn btn-lg mt-3 mb-3 forgot-pass" style="justify-content: right;"
-                                type="button" data-bs-toggle="modal" data-bs-target="#signupModal">Create
-                                Account</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> --}}
 
 
     <!-- Sign up Modal -->
@@ -235,7 +79,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="/userreg" method="post">
+                    <form action="/userreg" method="post" enctype="multipart/form-data">
                         <img class="mb-4" src="/static/img/logo/logo.png" alt="" width="72" height="57">
 
                         <div class="d-flex">
@@ -261,9 +105,12 @@
                                 placeholder="Password">
                             <label for="floatingPassword" name="password">Password</label>
                         </div>
-                        {{!-- <h6 style="color : red">
-                            {{ message }}
-                        </h6> --}}
+                        <div class="form-floating my-3">
+                            <input type="file" name="image" class="form-control" id="floatingImage" placeholder="Profile Image">
+                            <label for="floatingImage" name="image">Profile image</label>
+                        </div>
+                        
+                        
                         <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
                         <div style="display: flex; justify-content: space-between;">
                             <p class="mt-4 mb-3 text-body-secondary">© pFe (Code Dreamers)</p>
@@ -327,13 +174,13 @@
 
 
     <!-- Search bar -->
-    <div class="container my-7">
+    {{!-- <div class="container my-7">
         <form class="d-flex" role="search">
             <input class="form-control me-2 rounded-pill border-2" type="search" placeholder="Search"
                 aria-label="Search">
             <button class="btn btn-outline-primary btn-light" type="submit">Search</button>
         </form>
-    </div>
+    </div> --}}
 
     <!-- images -->
     <div class="my-3">
@@ -343,11 +190,11 @@
                     <img src="/static/img/p1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -355,11 +202,11 @@
                     <img src="/static/img/p2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -367,11 +214,11 @@
                     <img src="/static/img/p3.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -379,11 +226,11 @@
                     <img src="/static/img/p4.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -391,11 +238,11 @@
                     <img src="/static/img/p5.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -403,11 +250,11 @@
                     <img src="/static/img/p6.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -415,11 +262,11 @@
                     <img src="/static/img/p7.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -427,11 +274,11 @@
                     <img src="/static/img/p8.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -439,11 +286,11 @@
                     <img src="/static/img/p9.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -451,11 +298,11 @@
                     <img src="/static/img/p10.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="g-font3 fs-2">Welcome to Police Force Engagement</p>
-                        <a href="./service" class="btn btn-primary active" target="_blank" data-bs-toggle="modal"
+                        <a href="./service" class="btn btn-primary active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Our Services</a>
-                        <a href="./helpline" class="btn btn-warning active" target="_blank" data-bs-toggle="modal"
+                        <a href="./helpline" class="btn btn-warning active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Helpline Number</a>
-                        <a href="./feedback" class="btn btn-info active" target="_blank" data-bs-toggle="modal"
+                        <a href="./feedback" class="btn btn-info active" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Feedback</a>
                     </div>
                 </div>
@@ -563,7 +410,7 @@
                     given.</h3>
                 <p class="text-body-secondary g-font2 justify-text">The administrator can do the following operations on
                     all the employees under him.</p>
-                <a href="./admin" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                <a href="/admin" class="btn btn-primary btn-lg" data-bs-toggle="modal"
                     data-bs-target="#adminloginModal">Open Admin Section</a>
             </div>
 
@@ -630,7 +477,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="/adminlogin" method="post">
+                    <form action="/admin" method="post">
                         <img class="mb-4" src="/static/img/logo/logo.png" alt="" width="72" height="57">
 
                         <div class="form-floating my-3">
@@ -643,7 +490,7 @@
                                 placeholder="Password">
                             <label for="floatingPassword" name="adminpassword">Password</label>
                         </div>
-                        <button class="w-10 btn btn-lg mb-3 forgot-pass" type="button">Forgot Password</button>
+                        {{!-- <button class="w-10 btn btn-lg mb-3 forgot-pass" type="button">Forgot Password</button> --}}
                         <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
                     </form>
                 </div>
@@ -726,8 +573,8 @@
                             <img src="/static/img/mp leaders/1_CM_Shivraj.jpg" alt="..." width="200px" height="200px">
                             <h5 class="card-title">Shivraj Singh Chouhan</h5>
                             <p class="card-text">Chief Minister of MP</p>
-                            <a href="https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan" class="btn btn-primary"
-                                target="_blank">Know more</a>
+                            <a href="https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan" class="btn btn-primary">Know
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -738,8 +585,8 @@
                                 height="200px">
                             <h5 class="card-title">Dr. Narottam Mishra</h5>
                             <p class="card-text">Home Minister of MP</p>
-                            <a href="https://en.wikipedia.org/wiki/Narottam_Mishra" class="btn btn-primary"
-                                target="_blank">Know more</a>
+                            <a href="https://en.wikipedia.org/wiki/Narottam_Mishra" class="btn btn-primary">Know
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -749,8 +596,8 @@
                             <img src="/static/img/mp leaders/3_DG_Saxena.jpg" alt="..." width="200px" height="200px">
                             <h5 class="card-title">Mr. Shudhir Kumar Saxena</h5>
                             <p class="card-text">DGP of MP</p>
-                            <a href="https://en.wikipedia.org/wiki/Sudhirkumar_Saxena" class="btn btn-primary"
-                                target="_blank">Know more</a>
+                            <a href="https://en.wikipedia.org/wiki/Sudhirkumar_Saxena" class="btn btn-primary">Know
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -761,7 +608,7 @@
                             <h5 class="card-title">Mr. Gaurav rajput</h5>
                             <p class="card-text">Secretary, Home department, MP</p>
                             <a href="https://mpbreakingnews.in/madhya-pradesh/bhopal/ips-gaurav-rajput-became-the-youngest-ig-of-the-country-mhk/"
-                                class="btn btn-primary" target="_blank">Know more</a>
+                                class="btn btn-primary">Know more</a>
                         </div>
                     </div>
                 </div>
@@ -772,8 +619,8 @@
                                 height="200px">
                             <h5 class="card-title">ACS Rajesh Rajora</h5>
                             <p class="card-text">Addl. Chief Secretary, Home department, Govt of MP</p>
-                            <a href="https://in.linkedin.com/in/dr-rajesh-rajora-8215341a" class="btn btn-primary"
-                                target="_blank">Know more</a>
+                            <a href="https://in.linkedin.com/in/dr-rajesh-rajora-8215341a" class="btn btn-primary">Know
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -784,8 +631,8 @@
                                 height="200px">
                             <h5 class="card-title">Mangubhai C. Patel</h5>
                             <p class="card-text">Governor of MP</p>
-                            <a href="https://en.wikipedia.org/wiki/Mangubhai_C._Patel" class="btn btn-primary"
-                                target="_blank">Know more</a>
+                            <a href="https://en.wikipedia.org/wiki/Mangubhai_C._Patel" class="btn btn-primary">Know
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -893,159 +740,14 @@
         </div>
     </div>
 
-    <!-- our team member -->
-    <div class="container text-center my-6" id="community">
-        <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 my-1">
-                <span
-                    class="badge d-flex align-items-center justify-content-end p-3 pe-3 text-primary-emphasis bg-light-subtle g-font1 fs-4">
-                    Our Community
-                </span>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 my-1">
-                <span
-                    class="badge d-flex align-items-center p-1 pe-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                    <img class="rounded-circle me-1" src="/static/img/Our-team-member/hariom.jpg" alt="H" width="48"
-                        height="48">Hariom
-                </span>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 my-1">
-                <span
-                    class="badge d-flex align-items-center p-1 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-                    <img class="rounded-circle me-1" src="/static/img/Our-team-member/revi.jpg" alt="R" width="48"
-                        height="48">Ravi
-                </span>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 my-1">
-                <span
-                    class="badge d-flex align-items-center p-1 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                    <img class="rounded-circle me-1" src="/static/img/Our-team-member/atul.jpg" alt="A" width="48"
-                        height="48">Atul
-                </span>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 my-1">
-                <span
-                    class="badge d-flex align-items-center p-1 pe-3 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
-                    <img class="rounded-circle me-1" src="/static/img/Our-team-member/himashu.jpg" alt="H" width="48"
-                        height="48">Himanshu
-                </span>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 my-1">
-                <span
-                    class="badge d-flex align-items-center p-1 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                    <img class="rounded-circle me-1" src="/static/img/Our-team-member/aachal.jpg" alt="A" width="48"
-                        height="48">Aachal
-                </span>
-            </div>
-        </div>
-    </div>
-
+    {{>team}}
     <!-- footer -->
-    <div class="bg-new">
-        <div class="container">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-                <div class="col mb-3">
-                    <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                        <img src="/static/img/logo/logo.png" class="logo" alt="logo" width="100px">
-                    </a>
-                </div>
-
-                <div class="col mb-3">
-
-                </div>
-
-                <div class="col mb-3">
-                    <h5>Navbar</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary fs-5">Home</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/views/service" class="nav-link p-0 text-body-secondary fs-5"
-                                data-bs-toggle="modal" data-bs-target="#loginModal">Service</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/views/structure"
-                                class="nav-link p-0 text-body-secondary fs-5" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">Structure</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/views/about" class="nav-link p-0 text-body-secondary fs-5"
-                                data-bs-toggle="modal" data-bs-target="#loginModal">About us</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#contact"
-                                class="nav-link p-0 text-body-secondary fs-5">Contact
-                                us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col mb-3">
-                    <h5>User</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#candidate"
-                                class="nav-link p-0 text-body-secondary fs-5">FAQs</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#feature"
-                                class="nav-link p-0 text-body-secondary fs-5">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/views/feedback"
-                                class="nav-link p-0 text-body-secondary fs-5" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">Feedback</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/views/helpline"
-                                class="nav-link p-0 text-body-secondary fs-5" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">Helpline</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col mb-3">
-                    <h5>Community</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/views/admin" class="nav-link p-0 text-body-secondary fs-5"
-                                data-bs-toggle="modal" data-bs-target="#adminloginModal">Admin Section</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#community" class="nav-link p-0 text-body-secondary fs-5">Our
-                                community</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#candidate" class="nav-link p-0 text-body-secondary fs-5">Our
-                                candidates</a></li>
-                        <li class="nav-item mb-2"><a href="/views/user_history"
-                                class="nav-link p-0 text-body-secondary fs-5" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">History</a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-                <div class="col-md-4 d-flex align-items-center">
-                    <span class="mb-3 mb-md-0 text-body-secondary g-font1 fw-bold fs-4">
-                        <p class="text-white">© 2023 pFe, Inc</p>
-                        <p class="text-white">Email: supportpfe@gmail.com<br>Contact: 9302765839</p>
-                    </span>
-                </div>
-
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3"><a class="text-body-secondary white-icon "
-                            href="https://www.linkedin.com/in/hariom-singh-rajput/"><img
-                                src="/static/img/icon/linkedin.svg" alt="" width="25px"></a></li>
-                    <li class="ms-3"><a class="text-body-secondary white-icon "
-                            href="https://www.facebook.com/profile.php?id=100053355981532"><img
-                                src="/static/img/icon/facebook.svg" alt="" width="25px"></a></li>
-                    <li class="ms-3"><a class="text-body-secondary white-icon " href="https://www.instagram.com/"><img
-                                src="/static/img/icon/instagram.svg" alt="" width="25px"></a></li>
-                    <li class="ms-3"><a class="text-body-secondary white-icon " href="https://www.whatsapp.com/"><img
-                                src="/static/img/icon/whatsapp.svg" alt="" width="25px"></a></li>
-                </ul>
-            </footer>
-        </div>
-    </div>
-
+    {{>footer}}
     <!-- java script -->
-     {{#if message}}
-        <script>
-            alert("{{message}}");
-        </script>
+    {{#if message}}
+    <script>
+        alert("{{message}}");
+    </script>
     {{/if}}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

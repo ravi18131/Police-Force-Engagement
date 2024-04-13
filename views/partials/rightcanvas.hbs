@@ -1,0 +1,44 @@
+<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="container">
+            <img src="/static/img/icon/account.svg" class="white-icon" width="100px" alt="">
+        </div>
+        <div class="offcanvas-header text-white">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Account</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-header text-white">
+            <a href="/id" class="offcanvas-title" id="offcanvasRightLabel">ID</a>
+            {{!-- <h6 class="offcanvas-title" id="offcanvasRightLabel">ID</h6> --}}
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active"  href="/">{{Name}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  href="/">{{email}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="user_deshboard">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user_history">Your Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/availability">Your Availability</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assigned_work">Assigned Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/progress">Work Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Log Out</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>

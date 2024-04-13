@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Genos&family=Noto+Serif:wght@700&family=Philosopher&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    {{!--
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> --}}
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="fixed-top bg-new">
+        <!-- top bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="/static/img/top-img/bhopal-police.png" alt="" height="60px"">
+                    <h1 class=" fs-1 g-font1" style="font-weight: bold; color: #efd1a7;">MP Police</h1>
+                <img src="/static/img/top-img/G-20.png" alt="" height="60px">
+            </div>
+        </nav>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="/user_deshboard">
+                    <img src="/static/img/logo/logo.png" alt="pFe" width="50px" class="logo me-3">
+                </a>
+                <!-- <a class="navbar-brand" href="index.html">pFe</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/user_deshboard">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/structure">Structure</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Info Zone
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.mppolice.gov.in/sites/default/files/Annual_Administrative_Report_2017-2018.pdf">Annual
+                                        Admin Report</a></li>
+                                <li><a class="dropdown-item" href="/who_is_who">Who is
+                                        Who</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.mppolice.gov.in/sites/default/files/documents/ig-sir-plan-detail.pdf">Plans
+                                        of MP Police</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.mppolice.gov.in/sites/default/files/stc2020/Statistical-Data-2021.pdf">Statistical
+                                        Data</a></li>
+                                <li><a class="dropdown-item" href="/history">History of MP
+                                        Police</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/crimeChart">Crime Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div style="margin-top: 14rem;  background-color: #f0f0f0; "></div>
+    <div class="container mt-xl-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center align-items-center">
+                        <img src="/images/{{image}}" alt="User Image" class="img-div">
+                    </div>
+
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Name: {{fname}}</h5>
+                        <p class="card-text"><b>Email:</b> {{email}}</p>
+                        <p class="card-text"><b> Number:</b> {{number}}</p>
+                        <p class="card-text"><b>Work Status:</b> Available</p>
+                        <p class="card-text">
+                            <a class="nav-link btn pd-4 text-bg-primary " href="/logout"> Log Out </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- <img src="../static/img/about1.jpeg" alt="User Image" class="img-div"> --}}
+
+    <!-- Bootstrap JS (optional) -->
+    {{!-- javascript --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    {{!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
+
+    <!-- our team member -->
+    {{>team}}
+
+    {{!-- footer --}}
+    {{>footer}}
+
+</body>
+
+</html>
